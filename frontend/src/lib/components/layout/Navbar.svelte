@@ -92,7 +92,14 @@
           </button>
 
           {#if showNotifs}
-            <div class="notif-dropdown" onclick={(e) => e.stopPropagation()}>
+            <div
+              class="notif-dropdown"
+              role="menu"
+              aria-label="Notifications"
+              tabindex="0"
+              onclick={(e) => e.stopPropagation()}
+              onkeydown={(e) => { if (e.key === 'Escape') showNotifs = false; }}
+            >
               <div class="notif-header">
                 <span>Notifications</span>
                 {#if notificationsStore.items.length > 0}
@@ -104,14 +111,19 @@
               {:else}
                 <ul class="notif-list">
                   {#each notificationsStore.items.slice(0, 8) as n}
-                    <li class="notif-item" class:unread={!n.lu} onclick={() => { notificationsStore.markRead(n.id); if (n.lien) goto(n.lien); showNotifs = false; }}>
+                    <button
+                      type="button"
+                      class="notif-item"
+                      class:unread={!n.lu}
+                      onclick={() => { notificationsStore.markRead(n.id); if (n.lien) goto(n.lien); showNotifs = false; }}
+                    >
                       <div class="notif-icon">{n.type === 'nouvelle_reservation' ? '📬' : '📋'}</div>
                       <div class="notif-content">
                         <strong>{n.titre}</strong>
                         <p>{n.message}</p>
                         <time>{new Date(n.createdAt).toLocaleDateString('fr-FR')}</time>
                       </div>
-                    </li>
+                    </button>
                   {/each}
                 </ul>
               {/if}
@@ -149,7 +161,14 @@
           <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
         </button>
         {#if showLang}
-          <div class="lang-dropdown" onclick={(e) => e.stopPropagation()}>
+          <div
+            class="lang-dropdown"
+            role="menu"
+            aria-label="Choisir une langue"
+            tabindex="0"
+            onclick={(e) => e.stopPropagation()}
+            onkeydown={(e) => { if (e.key === 'Escape') showLang = false; }}
+          >
             {#each LANGUAGES as l}
               <button
                 class="lang-option"

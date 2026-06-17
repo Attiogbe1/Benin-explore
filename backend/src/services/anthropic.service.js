@@ -1,7 +1,17 @@
-import Groq from 'groq-sdk';
 import { prisma } from '../config/database.js';
 
-const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
+async function getGroqClient() {
+  const apiKey = process.env.GROQ_API_KEY?.trim();
+  if (!apiKey) return null;
+
+  try {
+    const { default: Groq } = await import('groq-sdk');
+    return new Groq({ apiKey });
+  } catch (err) {
+    console.error('[chat] impossible d initialiser Groq:', err?.message || err);
+    return null;
+  }
+}
 
 const SYSTEM_PROMPT = `Tu es **BeninGuide**, l'assistant intelligent officiel de la plateforme BeninExplore.
 Tu es un expert passionné du tourisme au Bénin, avec une connaissance approfondie de :
@@ -46,6 +56,9 @@ export async function getOrCreateSession(sessionId, userId = null, langue = 'fr'
 
 // Streaming — renvoie un AsyncIterable de chunks texte
 export async function streamChatMessage(sessionId, userMessage, langue = 'fr') {
+  const client = await getGroqClient();
+  if (!client) throw new Error('GROQ_API_KEY n\'est pas configurée. Le chat IA est indisponible.');
+
   const session = await prisma.chatSession.findUnique({
     where: { sessionId },
     include: { messages: { orderBy: { createdAt: 'asc' }, take: 10 } }
@@ -80,6 +93,9 @@ export async function saveChatMessages(sessionDbId, userMessage, assistantMessag
 
 // Fallback non-streaming (conservé pour compatibilité)
 export async function sendChatMessage(sessionId, userMessage, langue = 'fr') {
+  const client = await getGroqClient();
+  if (!client) throw new Error('GROQ_API_KEY n\'est pas configurée. Le chat IA est indisponible.');
+
   const session = await prisma.chatSession.findUnique({
     where: { sessionId },
     include: { messages: { orderBy: { createdAt: 'asc' }, take: 10 } }

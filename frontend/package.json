@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
+    "dev": "node ./node_modules/vite/bin/vite.js dev",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "start": "node build/index.js",
-    "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json"
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "postinstall": "node -e \"const fs=require('fs'); ['node_modules/.bin/vite','node_modules/.bin/vite-node','node_modules/vite/bin/vite.js'].forEach(p=>{try{fs.chmodSync(p,0o755)}catch{}})\""
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "^5.2.0",
