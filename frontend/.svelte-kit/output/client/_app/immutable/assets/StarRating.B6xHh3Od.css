@@ -1,0 +1,1 @@
+.stars.svelte-1led6g5{display:inline-flex;gap:1px}.star.svelte-1led6g5{font-size:var(--sz);color:var(--color-border);line-height:1}.star.filled.svelte-1led6g5{color:#f59e0b}.editable.svelte-1led6g5 .star:where(.svelte-1led6g5){cursor:pointer;transition:color .1s,transform .1s}.editable.svelte-1led6g5 .star:where(.svelte-1led6g5):hover{transform:scale(1.15)}

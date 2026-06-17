@@ -1,0 +1,1 @@
+import{a}from"./CiboEKye.js";const o={register:t=>a.post("/auth/register",t),login:t=>a.post("/auth/login",t),getMe:()=>a.get("/auth/me"),updateProfile:t=>a.put("/auth/profile",t),changePassword:t=>a.put("/auth/password",t)};export{o as a};

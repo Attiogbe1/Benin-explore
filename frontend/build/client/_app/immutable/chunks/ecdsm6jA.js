@@ -1,0 +1,1 @@
+import{a as e}from"./CiboEKye.js";const i={list:s=>e.get("/sites",s),getBySlug:s=>e.get(`/sites/${s}`),forMap:()=>e.get("/sites/map"),categories:()=>e.get("/categories"),regions:()=>e.get("/regions")};export{i as s};
