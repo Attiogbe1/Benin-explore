@@ -1,1 +1,0 @@
-import{a as r}from"./CiboEKye.js";const t={create:e=>r.post("/reservations",e),list:()=>r.get("/reservations/mes-reservations"),getById:e=>r.get(`/reservations/${e}`),cancel:e=>r.patch(`/reservations/${e}/annuler`)};export{t as r};

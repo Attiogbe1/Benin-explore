@@ -1,1 +1,0 @@
-function e(r,t="XOF"){return t==="XOF"?`${r.toLocaleString("fr-FR")} FCFA`:new Intl.NumberFormat("fr-FR",{style:"currency",currency:t}).format(r)}function n(r,t="fr-FR"){return new Intl.DateTimeFormat(t,{day:"numeric",month:"long",year:"numeric"}).format(new Date(r))}export{e as a,n as f};
