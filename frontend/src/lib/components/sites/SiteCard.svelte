@@ -4,12 +4,12 @@
   let { site, langue = 'fr', delay = 0 } = $props();
 
   const catPlaceholders = {
-    historique:    'https://images.trvl-media.com/place/3000001219/29bec893-aed8-479e-ae0a-2564398ec47d.jpg',
-    naturel:       'https://images.partir.com/3WyrelRrnOeUbsSJ4smYz6zsETY=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-chutes-kota-tanougou.jpg',
-    culturel:      'https://images.trvl-media.com/place/3000449170/d8cbe128-8da7-400c-9e99-cebe305ae2c0.jpg',
-    plage:         'https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg',
-    religieux:     'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/800px-Porte_du_non_retour_-_Ouidah.jpg',
-    gastronomique: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/800px-Ganvie_stilt_village%2C_Benin.jpg',
+    historique:    'https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg',
+    naturel:       'https://s.rfi.fr/media/display/b9bb7868-10b7-11ea-87b2-005056a99247/w:1024/p:16x9/parc-national-de-la-pendjari-au-benin_0.jpg',
+    culturel:      'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
+    plage:         'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    religieux:     'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
+    gastronomique: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
   };
 
   const iconEmojis = {

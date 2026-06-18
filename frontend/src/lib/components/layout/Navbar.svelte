@@ -76,6 +76,23 @@
           {link.label}
         </a>
       {/each}
+
+      <div class="nav-mobile-auth">
+        {#if authStore.isLoggedIn}
+          <a href="/profil" class="nav-link" onclick={() => isMenuOpen = false}>Mon profil</a>
+          {#if authStore.isPrestataire}
+            <a href="/profil/prestataire" class="nav-link" onclick={() => isMenuOpen = false}>Mon espace prestataire</a>
+          {/if}
+          {#if authStore.isAdmin}
+            <a href="/admin" class="nav-link" onclick={() => isMenuOpen = false}>Administration</a>
+          {/if}
+          <button class="nav-link nav-logout-btn" onclick={logout}>Déconnexion</button>
+        {:else}
+          <a href="/devenir-prestataire" class="nav-link" onclick={() => isMenuOpen = false}>Devenir prestataire</a>
+          <a href="/auth/login" class="nav-link" onclick={() => isMenuOpen = false}>Connexion</a>
+          <a href="/auth/register" class="btn btn-primary nav-register-btn" onclick={() => isMenuOpen = false}>S'inscrire</a>
+        {/if}
+      </div>
     </nav>
 
     <div class="nav-actions">
@@ -367,6 +384,23 @@
   .navbar.hero-mode .lang-btn { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.85); }
   .navbar.hero-mode .lang-btn:hover { border-color: white; color: white; }
 
+  /* ── Auth mobile panel ──────── */
+  .nav-mobile-auth {
+    display: none;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+    margin-top: var(--space-2);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    width: 100%;
+  }
+  .nav-logout-btn {
+    background: none; border: none; cursor: pointer;
+    font-family: var(--font-body); font-size: var(--text-sm); font-weight: 500;
+    color: var(--color-terracotta); text-align: left; padding: 0;
+  }
+  .nav-register-btn { text-align: center; }
+
   /* ── Hamburger ─────────────── */
   .menu-toggle {
     display: none; flex-direction: column; gap: 5px;
@@ -396,12 +430,28 @@
       pointer-events: none;
       transition: opacity 0.28s cubic-bezier(0.4,0,0.2,1),
                   transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      max-height: calc(100vh - var(--nav-h));
+      overflow-y: auto;
     }
     .nav-links.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
     .menu-toggle { display: flex; }
     .nav-username { display: none; }
+    .nav-actions .btn-sm { display: none; }
+    .nav-mobile-auth { display: flex; }
     .navbar.hero-mode .nav-links { background: var(--color-ocean-dark); }
     .navbar.hero-mode .nav-links .nav-link { color: rgba(255,255,255,0.85); }
+    .navbar.hero-mode .nav-mobile-auth { border-top-color: rgba(255,255,255,0.2); }
+    .navbar.hero-mode .nav-logout-btn { color: #f87171; }
     .notif-dropdown { right: -80px; width: 300px; }
+  }
+
+  @media (max-width: 420px) {
+    .notif-dropdown {
+      position: fixed;
+      top: var(--nav-h);
+      left: 0.75rem;
+      right: 0.75rem;
+      width: auto;
+    }
   }
 </style>

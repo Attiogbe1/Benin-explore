@@ -60,7 +60,7 @@
       <div class="site-preview card">
         <button class="close-preview" onclick={() => selectedSite = null}>✕</button>
         {#if selectedSite.imagesCouverture?.[0]}
-          <img src={selectedSite.imagesCouverture[0]} alt={selectedSite.nomFr} class="preview-img" />
+          <img src={selectedSite.imagesCouverture[0]} alt={selectedSite.nomFr} class="preview-img" referrerpolicy="no-referrer" onerror={(e) => e.currentTarget.style.display='none'} />
         {/if}
         <div class="preview-body">
           <span class="category-badge">{selectedSite.category?.nomFr}</span>

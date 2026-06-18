@@ -88,7 +88,7 @@
 
       <aside class="service-info card">
         {#if service.images?.[0]}
-          <img src={service.images[0]} alt={service.nomFr} class="service-hero-img" />
+          <img src={service.images[0]} alt={service.nomFr} class="service-hero-img" referrerpolicy="no-referrer" onerror={(e) => e.currentTarget.style.display='none'} />
         {/if}
         <div class="service-info-body">
           <h3>{service.nomFr}</h3>

@@ -29,34 +29,31 @@
     { value: '1',     label: 'Patrimoine UNESCO' }
   ];
 
-  /* Images Wikipedia Commons confirmées */
   const catImages = {
-    historique:    'https://images.trvl-media.com/place/3000001219/29bec893-aed8-479e-ae0a-2564398ec47d.jpg',
-    naturel:       'https://images.partir.com/3WyrelRrnOeUbsSJ4smYz6zsETY=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-chutes-kota-tanougou.jpg',
-    culturel:      'https://images.trvl-media.com/place/3000449170/d8cbe128-8da7-400c-9e99-cebe305ae2c0.jpg',
-    plage:         'https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg',
-    religieux:     'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/800px-Porte_du_non_retour_-_Ouidah.jpg',
-    gastronomique: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/800px-Ganvie_stilt_village%2C_Benin.jpg',
+    historique:    'https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg',
+    naturel:       'https://s.rfi.fr/media/display/b9bb7868-10b7-11ea-87b2-005056a99247/w:1024/p:16x9/parc-national-de-la-pendjari-au-benin_0.jpg',
+    culturel:      'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
+    plage:         'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    religieux:     'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
+    gastronomique: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
   };
 
-  /* Correspondance nom-icone → emoji (icone vient de la DB) */
   const iconEmojis = {
     landmark: '🏛️', trees: '🌳', palette: '🎨',
     waves: '🏖️', star: '⭐', utensils: '🍽️'
   };
 
-  /* Cartes de destination du hero */
   const heroDests = [
     {
-      img: 'https://images.trvl-media.com/place/3000449170/d8cbe128-8da7-400c-9e99-cebe305ae2c0.jpg',
+      img: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
       name: 'Ganvié', sub: 'Cité lacustre', href: '/sites/ganvie-cite-lacustre'
     },
     {
-      img: 'https://images.trvl-media.com/place/3000001219/29bec893-aed8-479e-ae0a-2564398ec47d.jpg',
+      img: 'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
       name: 'Porte du Non-Retour', sub: 'Ouidah — Mémorial UNESCO', href: '/sites/ouidah-route-esclaves'
     },
     {
-      img: 'https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg',
+      img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
       name: 'Grand-Popo', sub: 'Plages & détente', href: '/sites/plages-grand-popo'
     },
   ];
@@ -467,7 +464,7 @@
     display: flex; align-items: center;
     position: relative;
     background:
-      url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/1280px-Ganvie_stilt_village%2C_Benin.jpg')
+      url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg')
       center / cover no-repeat;
     overflow: hidden;
   }
@@ -676,6 +673,8 @@
   }
   @media (max-width: 400px) {
     .features-grid { grid-template-columns: 1fr; }
+    .services-types-grid { grid-template-columns: 1fr; }
+    .hero-wrapper { padding-block: var(--space-12); }
   }
 
   /* ── Services section ─────────────────────── */

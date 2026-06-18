@@ -15,7 +15,7 @@
       titreFr: '3 jours à Ouidah : la Route des Esclaves et ses mystères',
       categorie: 'Itinéraires',
       auteur: 'BeninExplore',
-      imageCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/800px-Porte_du_non_retour_-_Ouidah.jpg',
+      imageCover: 'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
       extrait: 'Plongez dans l\'histoire de la traite négrière en visitant la Porte du Non-Retour, le Temple des Pythons et les plages mystiques de Ouidah.',
       createdAt: '2025-01-15', readTime: 8, isFeatured: true
     },
@@ -24,7 +24,7 @@
       titreFr: 'Ganvié, la Venise de l\'Afrique : tout savoir avant de visiter',
       categorie: 'Conseils pratiques',
       auteur: 'Marie Kouassi',
-      imageCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/800px-Ganvie_stilt_village%2C_Benin.jpg',
+      imageCover: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
       extrait: 'Comment se rendre à Ganvié, quoi emporter, les meilleurs moments pour visiter et les règles à respecter dans ce village lacustre unique.',
       createdAt: '2025-02-03', readTime: 6
     },
@@ -33,7 +33,7 @@
       titreFr: 'Les 10 plats incontournables de la cuisine béninoise',
       categorie: 'Gastronomie',
       auteur: 'Chef Kossi',
-      imageCover: 'https://images.trvl-media.com/place/3000449170/d8cbe128-8da7-400c-9e99-cebe305ae2c0.jpg',
+      imageCover: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
       extrait: 'Acarajé, pâte de crabe, ablo, tchoukoutou… Découvrez les saveurs authentiques du Bénin et où les déguster.',
       createdAt: '2025-02-18', readTime: 5
     },
@@ -42,7 +42,7 @@
       titreFr: 'Safari au Pendjari : lions, éléphants et hippos du Bénin',
       categorie: 'Activités',
       auteur: 'Jean-Baptiste Alabi',
-      imageCover: 'https://images.partir.com/3WyrelRrnOeUbsSJ4smYz6zsETY=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-chutes-kota-tanougou.jpg',
+      imageCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/African_Elephant_at_Pendjari.jpg/800px-African_Elephant_at_Pendjari.jpg',
       extrait: 'Guide complet pour planifier votre safari dans le Parc National de la Pendjari, l\'un des derniers écosystèmes préservés d\'Afrique de l\'Ouest.',
       createdAt: '2025-03-05', readTime: 10
     },
@@ -51,7 +51,7 @@
       titreFr: 'Le vaudou au Bénin : démystification et voyage initiatique',
       categorie: 'Culture & Histoire',
       auteur: 'BeninExplore',
-      imageCover: 'https://images.trvl-media.com/place/3000001219/29bec893-aed8-479e-ae0a-2564398ec47d.jpg',
+      imageCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Abomey_bas-relief.jpg/800px-Abomey_bas-relief.jpg',
       extrait: 'Le vaudou béninois n\'a rien à voir avec les clichés hollywoodiens. Découvrez cette religion ancestrale riche en symboles et spiritualité.',
       createdAt: '2025-03-20', readTime: 12
     },
@@ -60,7 +60,7 @@
       titreFr: 'Grand-Popo : le guide complet des plages et de la détente',
       categorie: 'Activités',
       auteur: 'Sophie Atindehou',
-      imageCover: 'https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg',
+      imageCover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
       extrait: 'Séjour détente, sports nautiques, coucher de soleil sur le Mono : tout sur les plages de Grand-Popo.',
       createdAt: '2025-04-02', readTime: 7
     },
@@ -155,7 +155,7 @@
       <article class="featured" use:revealOnScroll>
         <a href="/blog/{featuredPost.slug}" class="featured-img-wrap">
           {#if featuredPost.imageCover}
-            <img src={featuredPost.imageCover} alt={featuredPost.titreFr} class="featured-img" />
+            <img src={featuredPost.imageCover} alt={featuredPost.titreFr} class="featured-img" referrerpolicy="no-referrer" onerror={(e) => e.currentTarget.style.display='none'} />
           {/if}
           <div class="featured-overlay"></div>
           <span class="featured-badge">⭐ À la une</span>
@@ -183,7 +183,7 @@
           <article class="post-card card" use:revealOnScroll={i * 80}>
             <a href="/blog/{post.slug}" class="post-img-link" tabindex="-1">
               {#if post.imageCover}
-                <img src={post.imageCover} alt={post.titreFr} class="post-img" />
+                <img src={post.imageCover} alt={post.titreFr} class="post-img" referrerpolicy="no-referrer" onerror={(e) => e.currentTarget.style.display='none'} />
               {:else}
                 <div class="post-img-ph">📖</div>
               {/if}
@@ -230,7 +230,7 @@
   /* ── Hero ──────────────────── */
   .blog-hero {
     min-height: 48vh;
-    background: url('https://images.trvl-media.com/place/3000001219/29bec893-aed8-479e-ae0a-2564398ec47d.jpg')
+    background: url('https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg')
       center / cover no-repeat;
     position: relative; display: flex; align-items: center;
   }

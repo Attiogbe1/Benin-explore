@@ -61,8 +61,16 @@ async function main() {
       gratuit: false, enfants: true, avecGuide: true,
       tarifs: { pirogueAller: 3000, pirogue: 5000, devise: 'XOF' },
       horaires: { ouverture: '7h00', fermeture: '18h00' },
-      imagesCouverture: ['https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/1280px-Ganvie_stilt_village%2C_Benin.jpg'],
-      images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/1280px-Ganvie_stilt_village%2C_Benin.jpg'],
+      imagesCouverture: [
+        'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
+        'https://media.gettyimages.com/id/515598196/fr/photo/village-sur-leau-ganvi%C3%A9-b%C3%A9nin.jpg?s=612x612&w=gi&k=20&c=bexdhVs3t5qwoj6Q5XQJ8kYjRzsJyd3ycQgLVFDicY0=',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/1280px-Ganvie_stilt_village%2C_Benin.jpg'
+      ],
+      images: [
+        'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/17/11/0f/a0.jpg',
+        'https://media.gettyimages.com/id/515598196/fr/photo/village-sur-leau-ganvi%C3%A9-b%C3%A9nin.jpg?s=612x612&w=gi&k=20&c=bexdhVs3t5qwoj6Q5XQJ8kYjRzsJyd3ycQgLVFDicY0=',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ganvie_stilt_village%2C_Benin.jpg/1280px-Ganvie_stilt_village%2C_Benin.jpg'
+      ],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 95,
       regionId: regionMap['atlantique'].id, categoryId: catMap['culturel'].id
@@ -81,8 +89,8 @@ async function main() {
       gratuit: false, enfants: true, avecGuide: true,
       tarifs: { adulte: 2000, enfant: 1000, devise: 'XOF' },
       horaires: { lundi: 'Fermé', autres: '9h00-18h00' },
-      imagesCouverture: ['https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Abomey_bas-relief.jpg/1280px-Abomey_bas-relief.jpg'],
-      images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Abomey_bas-relief.jpg/1280px-Abomey_bas-relief.jpg'],
+      imagesCouverture: ['https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg'],
+      images: ['https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg'],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 90,
       regionId: regionMap['zou'].id, categoryId: catMap['historique'].id
@@ -100,8 +108,16 @@ async function main() {
       gratuit: false, enfants: false, avecGuide: true,
       tarifs: { adulte: 1500, enfant: 750, devise: 'XOF' },
       horaires: { ouverture: '8h00', fermeture: '18h00' },
-      imagesCouverture: ['https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/1280px-Porte_du_non_retour_-_Ouidah.jpg'],
-      images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/1280px-Porte_du_non_retour_-_Ouidah.jpg'],
+      imagesCouverture: [
+        'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
+        'https://geoconfluences.ens-lyon.fr/images/image-a-la-une/img-rieucau/doc-3-la-porte-du-non-retour.jpg/image_preview',
+        'https://media.routard.com/image/99/4/pt26607.1237994.w430.jpg'
+      ],
+      images: [
+        'https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg',
+        'https://geoconfluences.ens-lyon.fr/images/image-a-la-une/img-rieucau/doc-3-la-porte-du-non-retour.jpg/image_preview',
+        'https://media.routard.com/image/99/4/pt26607.1237994.w430.jpg'
+      ],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 88,
       regionId: regionMap['atlantique'].id, categoryId: catMap['historique'].id
@@ -119,8 +135,14 @@ async function main() {
       gratuit: false, enfants: true, avecGuide: true,
       tarifs: { entree: 5000, vehicule: 3000, devise: 'XOF' },
       horaires: { saison: 'Décembre à Juin', ouverture: '6h00', fermeture: '18h00' },
-      imagesCouverture: ['https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/African_Elephant_at_Pendjari.jpg/1280px-African_Elephant_at_Pendjari.jpg'],
-      images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/African_Elephant_at_Pendjari.jpg/1280px-African_Elephant_at_Pendjari.jpg'],
+      imagesCouverture: [
+        'https://s.rfi.fr/media/display/b9bb7868-10b7-11ea-87b2-005056a99247/w:1024/p:16x9/parc-national-de-la-pendjari-au-benin_0.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/African_Elephant_at_Pendjari.jpg/1280px-African_Elephant_at_Pendjari.jpg'
+      ],
+      images: [
+        'https://s.rfi.fr/media/display/b9bb7868-10b7-11ea-87b2-005056a99247/w:1024/p:16x9/parc-national-de-la-pendjari-au-benin_0.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/African_Elephant_at_Pendjari.jpg/1280px-African_Elephant_at_Pendjari.jpg'
+      ],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 85,
       regionId: regionMap['atacora'].id, categoryId: catMap['naturel'].id
@@ -137,8 +159,16 @@ async function main() {
       latitude: 6.3583, longitude: 2.4389,
       gratuit: true, enfants: true, avecGuide: false,
       horaires: { lundi_samedi: '6h00-19h00', dimanche: '8h00-17h00' },
-      imagesCouverture: ['https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Marche_Dantokpa_Cotonou.jpg/1280px-Marche_Dantokpa_Cotonou.jpg'],
-      images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Marche_Dantokpa_Cotonou.jpg/1280px-Marche_Dantokpa_Cotonou.jpg'],
+      imagesCouverture: [
+        'https://ichef.bbci.co.uk/news/1024/branded_afrique/7558/live/677eff50-3ac1-11ef-a044-9d4367d5b599.jpg',
+        'https://img.piri.net/piri/upload/3/2024/10/31/b933d7a2-i4ivqojcovio7pj2lhkl.jpeg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Marche_Dantokpa_Cotonou.jpg/1280px-Marche_Dantokpa_Cotonou.jpg'
+      ],
+      images: [
+        'https://ichef.bbci.co.uk/news/1024/branded_afrique/7558/live/677eff50-3ac1-11ef-a044-9d4367d5b599.jpg',
+        'https://img.piri.net/piri/upload/3/2024/10/31/b933d7a2-i4ivqojcovio7pj2lhkl.jpeg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Marche_Dantokpa_Cotonou.jpg/1280px-Marche_Dantokpa_Cotonou.jpg'
+      ],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       popularite: 80,
       regionId: regionMap['littoral'].id, categoryId: catMap['culturel'].id
@@ -155,8 +185,8 @@ async function main() {
       latitude: 6.2833, longitude: 1.8167,
       gratuit: true, enfants: true, avecGuide: false,
       horaires: { ouverture: '6h00', fermeture: '20h00' },
-      imagesCouverture: ['https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg'],
-      images: ['https://images.partir.com/g0Hk8nXsvpa9v0dzyFYy4p8ucOs=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-plages-gran-popo.jpg'],
+      imagesCouverture: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80'],
+      images: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80'],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 82,
       regionId: regionMap['mono'].id, categoryId: catMap['plage'].id
@@ -174,22 +204,55 @@ async function main() {
       gratuit: false, enfants: true, avecGuide: true,
       tarifs: { adulte: 1500, devise: 'XOF' },
       horaires: { ouverture: '7h00', fermeture: '18h00' },
-      imagesCouverture: ['https://images.partir.com/1e4LbvKIWnAf6v6EwOGpBwM6xGE=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-pays-tata-somba.jpg'],
-      images: ['https://images.partir.com/1e4LbvKIWnAf6v6EwOGpBwM6xGE=/520x366/filters:sharpen(0.3,0.3,true)/lieux-interet/benin/benin-pays-tata-somba.jpg'],
+      imagesCouverture: [
+        'https://as1.ftcdn.net/v2/jpg/03/61/60/36/1000_F_361603606_dUZ0Zn2GPfuQvwwVs4nKWSDhbKEG6W0a.jpg',
+        'https://t3.ftcdn.net/jpg/01/27/85/22/240_F_127852204_isdfjjVALBGtaEJ8ABj4vS6IVp49zsbY.jpg',
+        'https://t3.ftcdn.net/jpg/03/61/60/36/240_F_361603606_dUZ0Zn2GPfuQvwwVs4nKWSDhbKEG6W0a.jpg'
+      ],
+      images: [
+        'https://as1.ftcdn.net/v2/jpg/03/61/60/36/1000_F_361603606_dUZ0Zn2GPfuQvwwVs4nKWSDhbKEG6W0a.jpg',
+        'https://t3.ftcdn.net/jpg/01/27/85/22/240_F_127852204_isdfjjVALBGtaEJ8ABj4vS6IVp49zsbY.jpg',
+        'https://t3.ftcdn.net/jpg/03/61/60/36/240_F_361603606_dUZ0Zn2GPfuQvwwVs4nKWSDhbKEG6W0a.jpg'
+      ],
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       estVedette: true, popularite: 78,
       regionId: regionMap['atacora'].id, categoryId: catMap['culturel'].id
+    },
+    {
+      slug: 'chutes-tanougou',
+      nomFr: 'Chutes de Tanougou', nomEn: 'Tanougou Falls',
+      nomEs: 'Cascadas de Tanougou', nomDe: 'Tanougou-Wasserfälle',
+      descriptionFr: "Les Chutes de Tanougou sont de magnifiques cascades naturelles nichées dans la forêt de l'Atacora, où il fait bon se baigner dans des vasques d'eau cristalline. Un site naturel exceptionnel du nord Bénin.",
+      descriptionEn: 'The Tanougou Falls are magnificent natural waterfalls nestled in the Atacora forest, perfect for swimming in crystal-clear natural pools. An exceptional natural site in northern Benin.',
+      descriptionEs: 'Las Cascadas de Tanougou son hermosas cascadas naturales en el bosque del Atacora, ideales para bañarse en piscinas de agua cristalina.',
+      descriptionDe: 'Die Tanougou-Wasserfälle sind prächtige natürliche Wasserfälle im Atacora-Wald, ideal zum Baden in kristallklaren Naturpools.',
+      adresse: 'Tanougou, Atacora, Bénin',
+      latitude: 10.8500, longitude: 1.2000,
+      gratuit: false, enfants: true, avecGuide: false,
+      tarifs: { adulte: 1000, devise: 'XOF' },
+      horaires: { ouverture: '7h00', fermeture: '18h00' },
+      imagesCouverture: [
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/3e/a7/cf/grande-chute-ou-se-baigner.jpg?w=1200&h=-1&s=1',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tanougou_waterfall.jpg/1280px-Tanougou_waterfall.jpg'
+      ],
+      images: [
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/3e/a7/cf/grande-chute-ou-se-baigner.jpg?w=1200&h=-1&s=1',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tanougou_waterfall.jpg/1280px-Tanougou_waterfall.jpg'
+      ],
+      videoUrl: null,
+      estVedette: false, popularite: 72,
+      regionId: regionMap['atacora'].id, categoryId: catMap['naturel'].id
     },
   ];
 
   for (const s of sitesData) {
     await prisma.touristSite.upsert({
       where:  { slug: s.slug },
-      update: { nomFr: s.nomFr, nomEn: s.nomEn, descriptionFr: s.descriptionFr, imagesCouverture: s.imagesCouverture, videoUrl: s.videoUrl ?? null, popularite: s.popularite, estVedette: s.estVedette ?? false },
+      update: { nomFr: s.nomFr, nomEn: s.nomEn, descriptionFr: s.descriptionFr, imagesCouverture: s.imagesCouverture, images: s.images, videoUrl: s.videoUrl ?? null, popularite: s.popularite, estVedette: s.estVedette ?? false },
       create: s
     });
   }
-  const allSites = await prisma.touristSite.findMany({ take: 7 });
+  const allSites = await prisma.touristSite.findMany({ take: 8 });
   console.log(`✅ ${allSites.length} sites touristiques`);
 
   // ══════════════════════════════════════════════════════════════════════
@@ -271,7 +334,8 @@ async function main() {
   // ══════════════════════════════════════════════════════════════════════
   // 6. SERVICES
   // ══════════════════════════════════════════════════════════════════════
-  // Nettoyer les réservations puis les services existants pour éviter les doublons
+  // Nettoyer dans l'ordre correct (contraintes FK)
+  await prisma.serviceReview.deleteMany({ where: { reservation: { service: { providerId: { in: [provider1.id, provider2.id] } } } } });
   await prisma.reservation.deleteMany({ where: { service: { providerId: { in: [provider1.id, provider2.id] } } } });
   await prisma.service.deleteMany({ where: { providerId: { in: [provider1.id, provider2.id] } } });
 
@@ -306,7 +370,7 @@ async function main() {
         capacite:     12,
         duree:        540,
         disponible:   true,
-        images:       ['https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Abomey_bas-relief.jpg/1280px-Abomey_bas-relief.jpg']
+        images:       ['https://voyageavecnous.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-06-a-15.34.01_422ced3c-1024x682.jpg']
       }
     }),
     prisma.service.create({
@@ -576,7 +640,7 @@ async function main() {
       titreEn:   'Voodoo — Religion, Art and Culture at the Heart of Benin',
       contenuFr: `Le Vodoun, ou Voodoo, est bien plus qu'une religion au Bénin : c'est une vision du monde, un art de vivre transmis depuis des générations. Le 10 janvier, la Fête du Voodoo à Ouidah rassemble des milliers de fidèles venus de tout le pays et de la diaspora pour célébrer cette tradition millénaire...`,
       contenuEn: `Voodoo is much more than a religion in Benin: it's a worldview, a way of life passed down through generations. On January 10th, the Voodoo Festival in Ouidah gathers thousands of faithful from across the country and the diaspora to celebrate this ancient tradition...`,
-      imageCover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/1280px-Porte_du_non_retour_-_Ouidah.jpg',
+      imageCover: 'https://geoconfluences.ens-lyon.fr/images/image-a-la-une/img-rieucau/doc-3-la-porte-du-non-retour.jpg',
       auteur:     'Maxime Houénou',
       categorie:  'Culture',
       estPublie:  true

@@ -66,7 +66,7 @@
       {#each services as service}
         <div class="service-card card">
           {#if service.images?.[0]}
-            <img src={service.images[0]} alt={service.nomFr} class="service-img" />
+            <img src={service.images[0]} alt={service.nomFr} class="service-img" referrerpolicy="no-referrer" onerror={(e) => e.currentTarget.style.display='none'} />
           {:else}
             <div class="service-img-placeholder">{typeLabels[service.type]?.[0]}</div>
           {/if}

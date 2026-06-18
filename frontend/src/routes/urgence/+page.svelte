@@ -200,7 +200,7 @@
   .urgence-hero {
     min-height: 52vh;
     background:
-      url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Porte_du_non_retour_-_Ouidah.jpg/1280px-Porte_du_non_retour_-_Ouidah.jpg')
+      url('https://kaleidos2.net/gallery/africa/benin/Atlantique/Ouidah/porte-non-retour/gallery_D-BEN-9929-75326.jpg')
       center / cover no-repeat;
     position: relative; display: flex; align-items: center;
   }
